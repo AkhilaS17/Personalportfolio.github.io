@@ -1,0 +1,283 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #103e61, #084a76); /* Gradient background */
+
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-image: url('pf.png'); /* Your image path */
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay for better text contrast */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-size: 32px; /* Larger for better readability */
+    font-family: 'Open Sans', Arial, sans-serif; /* Clean, modern font */
+    font-weight: 700; /* Bold for strong emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Soft shadow for readability */
+    padding: 40px 20px;
+}
+header h1 {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+header::before {
+    content: "";
+    background: url('your-image.jpg') center/cover no-repeat;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Starts hidden */
+    width: 250px;
+    height: 100%;
+    background: black;
+    color: white;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.sidebar.open {
+    left: 0; /* Sidebar slides in */
+}
+
+.sidebar h2 {
+    color: pink;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: pink;
+    border-radius: 5px;
+}
+
+/* Menu Toggle Button */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+}
+
+.close-btn {
+    display: none;
+    background: transparent;
+    color: pink;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+/* Show close button when sidebar opens */
+.sidebar.open .close-btn {
+    display: block;
+}
+
+/* Section Styling */
+section {
+    padding: 50px;
+    text-align: center;
+}
+section h2{
+color:#0b0b0b;
+text-align: center;
+
+}
+/* About Section Layout */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.profile {
+    flex: 1;
+    min-width: 200px;
+    max-width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile img {
+    width: 200px; /* Adjust size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fills the circle properly */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+
+.about-box {    
+    flex: 1;
+    max-width: 55%;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-box {
+        max-width: 90%;
+    }
+
+    .profile {
+        max-width: 90%;
+    }
+}
+
+
+
+
+.project-box {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-box img:hover {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+.contact-container h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #0b0b0b;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-box, .profile {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
