@@ -9,7 +9,7 @@ Hi! I'm Akhila, and this is my digital space where I showcase my projects, skill
 - GitHub Pages
 
 ## 📫 Live Website
-[Click here to view my portfolio](https://yourusername.github.io/portfolio)
+[Click here to view my portfolio](https://akhilas17.github.io/Personalportfolio.github.io/)
 
 ## ✨ Features
 - About Me section
