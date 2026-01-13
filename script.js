@@ -1,18 +1,40 @@
-function toggleMenu() {
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.classList.toggle('open');
+// Menu open/close
+const menuBtn = document.querySelector(".menu-btn");
+const sideMenu = document.getElementById("sideMenu");
+const closeBtn = document.querySelector(".close-btn");
 
-    // Show/hide close button when the menu opens
-    const closeBtn = document.querySelector('.close-btn');
-    if (sidebar.classList.contains('open')) {
-        closeBtn.style.display = "block"; // Show close button
-    } else {
-        closeBtn.style.display = "none";  // Hide close button
-    }
-}
+menuBtn.addEventListener("click", () => {
+  sideMenu.style.right = "0";
+});
 
-// Close menu when clicking a menu item
-function closeMenu() {
-    document.querySelector('.sidebar').classList.remove('open');
-    document.querySelector('.close-btn').style.display = "none";
-}
+closeBtn.addEventListener("click", () => {
+  sideMenu.style.right = "-250px";
+});
+
+// Close menu when clicking a link
+document.querySelectorAll(".side-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    sideMenu.style.right = "-250px";
+  });
+});
+
+// Scroll to next section when "Check Out" button clicked
+document.getElementById("checkOut").addEventListener("click", () => {
+  document.getElementById("about").scrollIntoView({
+    behavior: "smooth",
+    block: "center",
+    inline: "center"
+  });
+});
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,  // Show one image at a time
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

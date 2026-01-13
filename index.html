@@ -1,88 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akhila-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akhila's Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portfolio of Akhila - AI/ML Enthusiast. Showcasing projects, resume, and contact details." />
+  <meta name="keywords" content="Akhila, Portfolio, AI, Machine Learning, Projects, Resume, Contact" />
+  <meta name="author" content="Akhila" />
+
+  <!-- Open Graph for Social Media -->
+  <meta property="og:title" content="Akhila's Portfolio" />
+  <meta property="og:description" content="Check out my projects, resume, and contact info." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 </head>
 <body>
+  <!-- Header Section -->
+  <header class="header">
+    <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
+      <!-- <img src="assets/profile.jpg" alt="Akhila's Profile"> -->
 
-    <!-- Sidebar Menu -->
-    <nav class="sidebar">
-        <button class="close-btn" onclick="toggleMenu()">✖</button>
-        <h2>Akhila</h2>
-        <ul>
-            <li><a href="#About" onclick="closeMenu()">About</a></li>
-            <li><a href="#Projects" onclick="closeMenu()">Projects</a></li>
-            <li><a href="#Contact" onclick="closeMenu()">Contact</a></li>
-        </ul>
+    <!-- Menu Button -->
+    <button class="menu-btn">☰ Menu</button>
+
+    <!-- Side Menu -->
+    <nav id="sideMenu" class="side-menu">
+      <button class="close-btn">✖</button>
+      <h2>Akhila</h2>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Menu Toggle Button -->
-    <button class="menu-btn" onclick="toggleMenu()">☰ Menu</button>
-
-    <header>
-        
-        <h1>
-            Hey there, I’m Akhila <br> This is my node in the vast digital grid
-        </h1>
-    </header>
-
-    <section id="About">
-        <h2>About</h2>
-        <div class="container">
-            <div class="profile">
-                <img src="assets\profile.jpg" alt="Akhila's Photo">
-            </div>
-            <div class="about-box">
-                <h3>Let me introduce myself</h3>
-                <p>💡 I'm currently pursuing my B.Tech in Computer Science and Engineering at G. Narayanamma Institute of Technology and Science (GNITS).
-                    I have a keen interest in building impactful projects that solve real-world problems. As a curious learner, I'm always eager to explore new technologies and broaden my horizons in the ever-evolving tech landscape.
-                    I strongly believe in continuous learning,not just as a way to grow professionally, but also to evolve personally.
-                    .</p>
-            </div>
-        </div>
+    <!-- Hero Text -->
+    <section id="hero" class="hero">
+    <div class="hero-text">
+        <h1>&lt;Hey There ! <span class="highlight">I'm Akhila</span>&gt;</h1>
+        <h1>&lt;This<span class="blue"> is </span> my node <br><span class="blue"> in the </span> vast digital grid.&gt;</h1>
+        <p>I love to create impactful projects with AI & tech 🚀</p>
+        <a href="#about" class="btn" id="checkOut"><center>Check Out ↓</center></a>
+    </div>
     </section>
 
-    <section id="Projects">
-        
-        <h2>My Projects</h2>
-        <div class="project-box">
-        
-        <img src="assets\image1.png" alt="Fraud Detection System">
-        <img src="assets\img2.png" alt="Fraud Detection System">
-        <div class="project-info">
-            <h3>Transaction Fraud Detection System using Generative AI</h3>
-            <p>AI-powered fraud detection using Random Forest and Autoencoders on sythetic generated data. Allows users to analyze transaction risks with real-time model predictions.</p>
-            <a href="https://github.com/devendrachenchu17/fraud-detection-project" target="_blank" class="btn">View on GitHub</a>
-        </div>
-      
-        
-    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+  <div class="about-container">
+    <h2>About Me</h2>
+    <h3>💡 Let me introduce myself</h3>
+    <p>
+      I'm currently pursuing my B.Tech in Computer Science and Engineering at 
+      <strong>G. Narayanamma Institute of Technology and Science (GNITS)</strong>.  
+      I have a keen interest in building impactful projects that solve real-world problems.  
+      As a curious learner, I'm always eager to explore new technologies and broaden my horizons 
+      in the ever-evolving tech landscape.
+    </p>
+  </div>
+</section>
+<!-- Resume Section -->
+<section id="resume" class="resume-section">
+  <h2>My Resume</h2>
+  <p>Download my resume or explore my skills and experience.</p>
+
+  <a href="assets/Akhila.pdf" download class="btn">📄 Download Resume</a>
+
+  
+  </div>
 </section>
 
-    </section>
 
-    <section id="Contact">
-        <div class="contact-container">
-        <h2>Contact</h2>
-        <p>
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon"> 
-            <a href="https://github.com/AkhilaS17" target="_blank" style="color: #ffffff;">GitHub</a> |
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon">
-            <a href="https://www.linkedin.com/in/akhilasp17" target="_blank" style="color: #ffffff;">LinkedIn</a> |
-            📧 Email: 
-            <a href="mailto:sakhila1706@gmail.com" target="_blank" style="color: #ffffff;">sakhila1706@gmail.com</a>
+<section id="projects" class="projects-section">
+  <h2>My Project</h2>
+  <p>Here is the project I have worked on recently:</p>
 
-        </p>
-        </div>
-    </section>
+  <!-- Slider main container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide">
+        <img src="assets/image1.png" alt="Fraud Detection System" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="swiper-slide">
+        <img src="assets/img2.png" alt="Fraud Detection System" />
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Akhila. All rights reserved.</p>
-    </footer>
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Project details (below carousel) -->
+  <div class="project-info">
+    <h3>Fraud Detection System using Generative AI</h3>
+    <p>
+      AI-powered fraud detection using Random Forest and Autoencoders on synthetic generated data. 
+      Allows users to analyze transaction risks with real-time model predictions.
+    </p>
+    <a
+      href="https://github.com/devendrachenchu17/fraud-detection-project"
+      target="_blank"
+      class="btn"
+      >View project</a
+    >
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="contact-links">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+    <a href="https://github.com/AkhilaS17" target="_blank">  
+    GitHub </a>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+    <a href="https://www.linkedin.com/in/akhilasp17" target="_blank">LinkedIn</a>
+    📧 Email: 
+    <a href="mailto:sakhila1706@gmail.com">sakhila1706@gmail.com</a>
+    </a>
+  </div>
+</section>
+<footer> <p>&copy; 2025 Akhila. All rights reserved.</p> </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
