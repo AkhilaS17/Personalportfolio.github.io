@@ -1,0 +1,47 @@
+/* Profile section background gradient */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000, #555555);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+/* Profile Image top-left corner */
+.profile-img {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Button */
+#checkBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#checkBtn:hover {
+  background: #ddd;
+}
+
+/* Light background for other sections */
+.section.light {
+  min-height: 100vh;
+  background: #f9f9f9;
+  color: #333;
+  padding: 50px;
+  text-align: center;
+}
