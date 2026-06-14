@@ -24,9 +24,12 @@
 <body>
   <!-- Header Section -->
   <header class="header">
-    <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
-      <!-- <img src="assets/profile.jpg" alt="Akhila's Profile"> -->
-
+    <div class="profile-role">
+      <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
+      <div class="role-text">
+        <h2>Full Stack Developer</h2>
+      </div>
+    </div>
     <!-- Menu Button -->
     <button class="menu-btn">☰ Menu</button>
 
@@ -45,7 +48,12 @@
         <h1>&lt;Hey There ! <span class="highlight">I'm Akhila</span>&gt;</h1>
         <h1>&lt;This<span class="blue"> is </span> my node <br><span class="blue"> in the </span> vast digital grid.&gt;</h1>
         <p>I love to create impactful projects with AI & tech 🚀</p>
-        <a href="#about" class="btn" id="checkOut"><center>Check Out ↓</center></a>
+        <div class="hero-buttons">
+          <a href="#about" class="btn" id="checkOut">
+            Check Out ↓</a>
+          <a href="assets/Akhila.pdf" download class="btn resume-btn">
+            📄 Download Resume</a>
+        </div>
     </div>
     </section>
 
@@ -66,56 +74,120 @@
   </div>
 </section>
 <!-- Resume Section -->
-<section id="resume" class="resume-section">
-  <h2>My Resume</h2>
-  <p>Download my resume or explore my skills and experience.</p>
+<section id="skills" class="skills-section">
+  <h2>Building Blocks of My Journey</h2>
 
-  <a href="assets/Akhila.pdf" download class="btn">📄 Download Resume</a>
+  <div class="skills-grid">
 
-  
+    <div class="skills-column">
+      <ul>
+        <li>Object Oriented Programming</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React</li>
+      </ul>
+    </div>
+
+    <div class="skills-column">
+      <ul>
+        <li>DBMS</li>
+        <li>Operating Systems</li>
+        <li>Computer Networks</li>
+        <li>Machine Learning</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+
   </div>
 </section>
 
-
 <section id="projects" class="projects-section">
-  <h2>My Project</h2>
-  <p>Here is the project I have worked on recently:</p>
 
-  <!-- Slider main container -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <!-- Slide 1 -->
-      <div class="swiper-slide">
-        <img src="assets/image1.png" alt="Fraud Detection System" />
+  <h2>My Projects</h2>
+
+  <div class="projects-container">
+    <!-- PROJECT 1 -->
+
+    <div class="project-card">
+
+      <div class="swiper hydroSwiper">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="assets/hydro1.png" alt="HydroMorph">
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next hydro-next"></div>
+        <div class="swiper-button-prev hydro-prev"></div>
+
       </div>
-      <!-- Slide 2 -->
-      <div class="swiper-slide">
-        <img src="assets/img2.png" alt="Fraud Detection System" />
+
+      <h3>Directional Analysis of Water Bodies</h3>
+
+      <div class="project-buttons">
+
+        <a
+          href="https://github.com/AkhilaS17/HydroMorphAnalysis"
+          target="_blank"
+          class="btn">
+          View Code
+        </a>
+
+        <a
+          href="https://hydromorphanalysis-ywbtf4emsnoc62h3wlkizb.streamlit.app/"
+          target="_blank"
+          class="btn">
+          View Project
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="project-card">
+
+      <div class="swiper fraudSwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <img src="assets/image1.png" alt="Fraud Detection">
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img2.png" alt="Fraud Detection">
+          </div>
+
+        </div>
+
+        <div class="swiper-button-next fraud-next"></div>
+        <div class="swiper-button-prev fraud-prev"></div>
+      </div>
+
+      <h3>Fraud Detection System using Generative AI</h3>
+
+      <div class="project-buttons">
+        <a
+          href="https://github.com/devendrachenchu17/fraud-detection-project"
+          target="_blank"
+          class="btn">
+          View Code
+        </a>
+
+        
       </div>
     </div>
 
-    <!-- Navigation buttons -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    
 
-    <!-- Pagination -->
-    <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Project details (below carousel) -->
-  <div class="project-info">
-    <h3>Fraud Detection System using Generative AI</h3>
-    <p>
-      AI-powered fraud detection using Random Forest and Autoencoders on synthetic generated data. 
-      Allows users to analyze transaction risks with real-time model predictions.
-    </p>
-    <a
-      href="https://github.com/devendrachenchu17/fraud-detection-project"
-      target="_blank"
-      class="btn"
-      >View project</a
-    >
-  </div>
 </section>
 
 
